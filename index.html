@@ -18,7 +18,9 @@ $( document ).ready(function() {
     <h2>PUANLAR:</h2>
     <!-- Loop that displays all tables -->
     {% for table in tables %}
-                {{ table|safe }}
+        <table class="data">
+            {{ table|safe }}
+        </table>
     {% endfor %}
 </div>
 </body>
